@@ -10,7 +10,7 @@
     <style>
         body {
             background-color: #f5f5f5; /* Fond gris clair */
-            color: #fff; /* Texte blanc */
+            color: #333; /* Texte foncé */
             font-family: 'Poppins', sans-serif;
         }
         .navbar {
@@ -29,7 +29,7 @@
             justify-content: center;
             align-items: center;
             text-align: left; /* Alignement à gauche */
-            background-color: #1E90FF; /* Bleu plus vif */
+            background-color: #1E90FF; /* Bleu vif */
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -47,8 +47,15 @@
         }
         .section {
             padding: 60px 20px;
-            text-align: left; /* Alignement à gauche */
-            background-color: #1E90FF; /* Fond section bleu */
+            background-color: #fff; /* Fond section blanc */
+        }
+        .card {
+            margin: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: #fff; /* Fond des cartes */
+            color: #333; /* Texte des cartes */
         }
         .gallery img {
             max-width: 100%;
@@ -95,41 +102,85 @@
 
     <div class="section" id="successStory" style="display:none;">
         <h2>Une Success Story</h2>
-        <p>Aridya Mujinga incarne l'architecture moderne, ayant commencé son parcours au Collège Jésuite Bonsomi. Passionnée par les mathématiques, elle a ensuite intégré l'Institut National de Bâtiments et Travaux Publics (INBTP) pour développer ses compétences.</p>
-        <p>Ses projets innovants, notamment des ponts écologiques, allient esthétique et durabilité, inspirant une nouvelle génération d’architectes.</p>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Pont+Ecologique" alt="Pont Ecologique">
-            <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Architecture+Durable" alt="Architecture Durable">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Parcours d'Aridya</h5>
+                        <p class="card-text">Aridya Mujinga incarne l'architecture moderne, ayant commencé son parcours au Collège Jésuite Bonsomi. Passionnée par les mathématiques, elle a ensuite intégré l'Institut National de Bâtiments et Travaux Publics (INBTP) pour développer ses compétences.</p>
+                        <p class="card-text">Ses projets innovants, notamment des ponts écologiques, allient esthétique et durabilité, inspirant une nouvelle génération d’architectes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="gallery">
+                    <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Pont+Ecologique" alt="Pont Ecologique">
+                    <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Architecture+Durable" alt="Architecture Durable">
+                </div>
+            </div>
         </div>
         <button class="btn btn-primary" id="nextButton1">Suivant</button>
     </div>
 
     <div class="section" id="about" style="display:none;">
         <h2>À Propos de Moi</h2>
-        <p>Aridya Mujinga est une architecte engagée, déterminée à transformer le monde par l'architecture. Son parcours au Collège Jésuite Bonsomi lui a permis de développer une solide compréhension des sciences humaines.</p>
-        <p>À l'INBTP, elle a appris à concevoir des structures qui améliorent la vie quotidienne, tout en respectant l'environnement.</p>
-        <div class="gallery">
-            <img src="eleve.jpg" alt="Portrait Aridya">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mon Engagement</h5>
+                        <p class="card-text">Aridya Mujinga est une architecte engagée, déterminée à transformer le monde par l'architecture. Son parcours au Collège Jésuite Bonsomi lui a permis de développer une solide compréhension des sciences humaines.</p>
+                        <p class="card-text">À l'INBTP, elle a appris à concevoir des structures qui améliorent la vie quotidienne, tout en respectant l'environnement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="gallery">
+                    <img src="eleve.jpg" alt="Portrait Aridya">
+                </div>
+            </div>
         </div>
         <button class="btn btn-primary" id="nextButton2">Suivant</button>
     </div>
 
     <div class="section" id="encouragements" style="display:none;">
         <h2>Un message pour toi !</h2>
-        <p>Cher Ari, rappelle-toi que les défis sont des opportunités. Chaque pas que tu fais te rapproche de tes rêves les plus audacieux. Je suis toujours là pour te soutenir.</p>
-        <p>Le chemin sera long, mais il est parsemé de succès. N'aie pas peur de gravir les échelons et de surmonter les obstacles avec courage.</p>
-        <button class="btn btn-primary" id="nextButton3">Suivant</button>
-        <div class="gallery">
-            <img src="ingenio.jpg" alt="Portrait Aridya">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Inspiration et Soutien</h5>
+                        <p class="card-text">Cher Ari, rappelle-toi que les défis sont des opportunités. Chaque pas que tu fais te rapproche de tes rêves les plus audacieux. Je suis toujours là pour te soutenir.</p>
+                        <p class="card-text">Le chemin sera long, mais il est parsemé de succès. N'aie pas peur de gravir les échelons et de surmonter les obstacles avec courage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="gallery">
+                    <img src="ingenio.jpg" alt="Portrait Aridya">
+                </div>
+            </div>
         </div>
+        <button class="btn btn-primary" id="nextButton3">Suivant</button>
     </div>
 
     <div class="section" id="conclusion" style="display:none;">
         <h2>Conclusion</h2>
-        <div class="gallery">
-            <img src="about.jpg" alt="Portrait Aridya">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Rappelle-toi de tes Rêves</h5>
+                        <p class="card-text">Tu as le potentiel de réaliser de grandes choses, Aridya. Garde toujours à l'esprit tes rêves et ta passion pour l'architecture. Le monde a besoin de ton talent unique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="gallery">
+                    <img src="about.jpg" alt="Portrait Aridya">
+                </div>
+            </div>
         </div>
-        <p>Tu as le potentiel de réaliser de grandes choses, Aridya. Garde toujours à l'esprit tes rêves et ta passion pour l'architecture. Le monde a besoin de ton talent unique.</p>
         <button class="btn btn-primary" id="backButton">Retour à l'accueil</button>
     </div>
 
