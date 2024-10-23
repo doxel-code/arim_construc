@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arim Construct</title>
+    <title>Arim Construct - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -13,6 +13,12 @@
             color: #333;
             font-family: 'Poppins', sans-serif;
         }
+        .navbar {
+            background-color: #0000FF; /* Bleu foncé */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
         .hero {
             height: 100vh;
             display: flex;
@@ -20,7 +26,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: #0000FF; /* Bleu foncé */
+            background-color: #1E90FF; /* Bleu plus vif */
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -33,6 +39,7 @@
             position: fixed;
             bottom: 10px;
             right: 10px;
+            color: #0000FF;
         }
         .section {
             padding: 60px 20px;
@@ -48,9 +55,36 @@
             font-size: 3rem;
             color: #FFD700;
         }
+        .btn-custom {
+            background-color: #FFD700;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Arim Construct</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#successStory">Success Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#encouragements">Encouragements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="hero">
         <h1 id="welcomeText">Bienvenue Aridya Mujinga</h1>
@@ -60,8 +94,8 @@
 
     <div class="section" id="successStory" style="display:none;">
         <h2>Une Success Story</h2>
-        <p>Dans un avenir proche, Aridya Mujinga est devenue une figure emblématique de l'architecture moderne. Son parcours a commencé au Collège Jésuite Bonsomi, où elle a brillamment poursuivi des études humanitaires en mathématiques. Sa passion pour les chiffres et les formes l'a ensuite conduite à s'inscrire à l'Institut National de Bâtiments et Travaux Publics (INBTP).</p>
-        <p>À l'INBTP, Aridya a découvert sa véritable vocation : créer des structures qui relient les gens et améliorent leur quotidien. Elle a remporté plusieurs prix pour ses projets innovants, notamment une série de ponts écologiques qui allient esthétique et durabilité. Ces réalisations ont non seulement transformé le paysage urbain, mais ont également inspiré de nombreux jeunes à suivre ses traces.</p>
+        <p>Aridya Mujinga incarne l'architecture moderne, ayant commencé son parcours au Collège Jésuite Bonsomi. Passionnée par les mathématiques, elle a ensuite intégré l'Institut National de Bâtiments et Travaux Publics (INBTP) pour développer ses compétences.</p>
+        <p>Ses projets innovants, notamment des ponts écologiques, allient esthétique et durabilité, inspirant une nouvelle génération d’architectes.</p>
         <div class="gallery">
             <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Pont+Ecologique" alt="Pont Ecologique">
             <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Architecture+Durable" alt="Architecture Durable">
@@ -71,7 +105,8 @@
 
     <div class="section" id="about" style="display:none;">
         <h2>À Propos de Moi</h2>
-        <p>Aridya Mujinga est une architecte passionnée qui s'est engagée à transformer le monde à travers l'architecture. Elle a commencé son parcours humanitaire au Collège Jésuite Bonsomi, où elle a excellé en mathématiques et a développé un goût pour les sciences humaines. Ses études à l'INBTP l'ont dotée des compétences nécessaires pour devenir une architecte de renommée.</p>
+        <p>Aridya Mujinga est une architecte engagée, déterminée à transformer le monde par l'architecture. Son parcours au Collège Jésuite Bonsomi lui a permis de développer une solide compréhension des sciences humaines.</p>
+        <p>À l'INBTP, elle a appris à concevoir des structures qui améliorent la vie quotidienne, tout en respectant l'environnement.</p>
         <div class="gallery">
             <img src="eleve.jpg" alt="Portrait Aridya">
         </div>
@@ -80,9 +115,8 @@
 
     <div class="section" id="encouragements" style="display:none;">
         <h2>Un message pour toi !</h2>
-        <p>Cher Ari, ceci est la preuve qu'on est toujours aussi proche bien au-delà des apparences. Je te soutiens d'aussi loin que je me trouve, parce qu'étant toujours plus près de toi de l'intérieur.</p>
-        <p>Le chemin choisi sera long et parsemé d'embûches…</p>
-        <p>On se retrouvera chacun au sommet de son art. Alors n'aie pas peur de gravir les échelons et de traverser chaque obstacle avec courage et ardeur.</p>
+        <p>Cher Ari, rappelle-toi que les défis sont des opportunités. Chaque pas que tu fais te rapproche de tes rêves les plus audacieux. Je suis toujours là pour te soutenir.</p>
+        <p>Le chemin sera long, mais il est parsemé de succès. N'aie pas peur de gravir les échelons et de surmonter les obstacles avec courage.</p>
         <button class="btn btn-primary" id="nextButton3">Suivant</button>
         <div class="gallery">
             <img src="ingenio.jpg" alt="Portrait Aridya">
@@ -94,13 +128,12 @@
         <div class="gallery">
             <img src="about.jpg" alt="Portrait Aridya">
         </div>
-        <p>Tu es capable de réaliser de grandes choses, Aridya. Rappelle-toi toujours de tes rêves et de ta passion pour l'architecture. Le monde a besoin de ton talent.</p>
+        <p>Tu as le potentiel de réaliser de grandes choses, Aridya. Garde toujours à l'esprit tes rêves et ta passion pour l'architecture. Le monde a besoin de ton talent unique.</p>
         <button class="btn btn-primary" id="backButton">Retour à l'accueil</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-        // Animation GSAP pour la page d'accueil
         const welcomeText = document.getElementById("welcomeText");
         const letters = welcomeText.innerText.split("").map((letter) => {
             return `<span>${letter}</span>`;
@@ -114,7 +147,6 @@
             stagger: 0.05 
         });
 
-        // Gestion des boutons pour naviguer entre les sections
         document.getElementById("startButton").onclick = function() {
             document.querySelector(".hero").style.display = "none";
             document.getElementById("successStory").style.display = "block";
